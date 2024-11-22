@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+        Hello! My name is [Your Name]. I'm a passionate web developer who loves creating
+        artistic and interactive websites. I enjoy learning new technologies and experimenting
+        with design.
+        </p>
+
+        <h3>My Journey</h3>
+        <p>
+        I started my web development journey as a beginner, and I've grown to love designing
+        websites that are both functional and visually stunning. I focus on creating clean
+        and user-friendly experiences.
+        </p>
+
+        <h3>Hobbies</h3>
+        <ul>
+        <li>Exploring new technologies</li>
+        <li>Designing user interfaces</li>
+        <li>Reading about web design trends</li>
+        <li>Sketching and art</li>
+        </ul>
+    </section>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>About Me</h1>
+            <p>
+                Learn more about my journey as a developer and my passion for creating beautiful, functional websites.
+            </p>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="card">
+            <h3>Who I Am</h3>
+            <p>
+                I am a passionate web developer with a strong interest in designing creative and interactive websites.
+                My journey began as a curious learner, exploring HTML and CSS, and grew into a passion for full-stack
+                development.
+            </p>
+        </div>
+        <div class="card">
+            <h3>What I Do</h3>
+            <p>
+                I specialize in front-end development, focusing on creating user-friendly designs and engaging user
+                experiences. I'm also exploring back-end technologies to expand my skills.
+            </p>
+        </div>
+        <div class="card">
+            <h3>My Vision</h3>
+            <p>
+                My goal is to craft web solutions that not only solve problems but also delight users with seamless
+                functionality and beautiful design.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Select the header element
+        const header = document.querySelector('header');
+
+        // Track the scroll position
+        let lastScrollY = window.scrollY;
+
+        // Add scroll event listener
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                // If scrolling down, hide the header
+                header.classList.add('hidden');
+            } else {
+                // If scrolling up, show the header
+                header.classList.remove('hidden');
+            }
+            lastScrollY = window.scrollY; // Update the last scroll position
+        });
+    </script>
+</body>
+</html>
